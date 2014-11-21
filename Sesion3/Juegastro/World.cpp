@@ -26,4 +26,4 @@ void World::update()
 
 //Gestor atmosferico, aqui
 
-char getLLuvia(int posicion, int )
+//char getLLuvia(int posicion, int )

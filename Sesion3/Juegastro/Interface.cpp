@@ -13,8 +13,20 @@ Interface::Interface(Entity *pHero)
 
 int Interface::getInput(void)
 {
+    char keyPressed = NULL;
     if (_kbhit())
-        printf("has pulsado la tecla %c", _getch());
+        keyPressed = static_cast<char>(_getch());
+    switch (keyPressed)
+    {
+    case 'a':
+        //m_pMainChar->moveLeft();
+        printf("A pulsada");
+    case 'd':
+        printf("D pulsada");
+        break;
+    default:
+        break;
+    }
 
     return _getch();
 

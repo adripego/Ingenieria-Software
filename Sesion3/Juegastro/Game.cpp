@@ -7,6 +7,7 @@
 
 Entity *peCharacter = NULL;
 World *peWorld = NULL;
+Interface *input;
 
 
 void Game::initLevel(void)
@@ -14,7 +15,7 @@ void Game::initLevel(void)
     Entity **m_pEntity = new Entity * [MAX_ENTITIES];
     m_pEntity[0] = new Character (50);
     peWorld = new World(m_pEntity,1);
-    Interface *input = new Interface(m_pEntity[0]);
+    input = new Interface(m_pEntity[0]);
 }
 
 void Game::update(void)

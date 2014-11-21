@@ -5,6 +5,7 @@
 class Interface{
     public:
         Interface(Entity *pMainCharacter);
+        ~Interface();
         int getInput(void);
     private:
         Entity *m_pMainChar;
